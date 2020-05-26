@@ -1,0 +1,728 @@
+
+/*===== CSS 公共區 ======*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 10px !important;
+    color:#fff;
+    font-weight: 800;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding: 100px 15px;
+    box-sizing: border-box;
+}
+
+.container>h2{
+    font-size:1.5em;
+    font-weight: 800;;
+    color:#333;
+    padding-left: 70px;
+    padding-bottom:30px;
+    padding-top:10px;
+    margin-bottom: 50px;
+    border-bottom:2px solid #3d4c66;
+    background-image:url('../images/title-icon.png');
+    background-repeat: no-repeat;
+    background-size:50px;
+}
+
+
+.content-section-bgColor{
+    background-color: rgba(255, 255, 255, .74);
+    box-shadow: 5px 5px 0px rgba(29, 229, 255, .34);
+    border-radius:30px;
+}
+
+.highlight{
+    color:#d12832;
+    font-weight: 800;
+}
+
+.btn-style{
+    width:220px;
+    padding:0;
+    font-size: 25px;
+    color:#fff;   
+    line-height:2;
+    border:0;
+    border-radius:200px;
+    background-color:#ffbb26;
+    /* box-shadow: 3px 3px 0px #73b0df; */
+    cursor: pointer;
+}
+
+.btn-style .fa{
+    color:#fff;
+}
+
+.btn-style:focus{
+    outline:none;
+}
+
+/*------ Swiper Pagination & Navigation Box-----*/
+.swiper-control-box{
+    position:relative;
+    max-width:450px;
+    min-height:100px;
+    margin:auto;
+}
+
+ /*----- Swiper Arrow Control-----*/
+ .swiper-button-prev, .swiper-button-next{
+    width:30px !important;
+    height:30px !important;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbb26;
+    transition:.3s;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    background-color: rgba(255, 170, 0, 0.555);
+}
+
+.swiper-button-prev:focus, .swiper-button-next:focus{
+    outline:none;
+}
+
+.swiper-button-disabled{
+    opacity:0 !important;
+}
+
+/*----- Swiper Pagination Control-----*/
+.swiper-pagination{
+    left:0;
+    right:0;
+    margin:35px auto;
+}
+
+/*Red Fonts*/
+.red{
+    color:#f00;
+}
+
+
+#cboxWrapper::before{
+    right:43px !important; 
+    top:29px !important;
+}
+
+
+
+/*Style.CSS*/
+.more{
+    padding-left:0;
+}
+
+.tc{
+    text-align:left;
+}
+
+.qrcode-right p{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*============================== Desktop Template =================================*/
+
+/*------ Banner CSS----------*/
+    #banner-wrap{
+        background:url("../images/banner/banner-bg-2.jpg") center center / cover;
+        position:relative;
+    }
+    #banner-wrap img{
+        width:100%;
+        vertical-align: middle;
+    }
+
+    #mobile-banner{
+        display:none;
+    }
+   
+    #banner-wrap button{
+        position:absolute;
+        left:0;
+        right:0;
+        margin:auto;
+        bottom:40px;
+    }
+    
+    /* .sub-title{
+        width:300px;
+        height:60px;
+        background-color: rgb(123, 223, 248);
+        margin-bottom: 20px;
+    } */
+    
+
+
+/*------ New Year Bonus CSS----------*/
+    #advantage-wrap{
+      
+        background:url("../images/section-bg_02.jpg") center bottom / cover;
+    }
+
+    #advantage-wrap .container{
+        max-width:1600px;
+        height:100%;     
+    }
+
+    .advantage-content{
+        width:100%;
+    }
+
+    .advantage-box{
+        overflow:hidden;
+        margin-bottom: 40px;  
+    }
+
+    .advantage-box::after{
+        clear:both;
+    }
+
+    .advantage-box img:nth-child(1){
+        display: inline-block;
+        float:left;
+        width:49%
+    }
+
+    .advantage-box img:nth-child(2){
+        display: inline-block;
+        float:right;
+        width:49%;
+    }
+
+
+    .btn-look{
+        display:block;
+        margin:auto;
+    }
+
+
+/*------ Recommendation section CSS----------*/
+#recommend-wrap{
+    min-height:800px;
+    background:url('../images/section-bg_02.jpg') no-repeat center center / cover ;
+}
+
+.recommend-content-section{
+    width:100%;
+    padding:40px 40px;
+    box-sizing: border-box;  
+}
+
+.student-carousel-outer{
+    position:relative;
+    margin-bottom: 60px;
+    padding: 0 40px;
+}
+
+.student-swiper-container {
+    max-width:960px;
+}
+
+.student-swiper-container .swiper-slide{
+   /* display:flex;
+   justify-content: center; */
+}
+
+.student-carousel-outer .student-change-button-prev{
+    left:0 !important;
+}
+
+.student-carousel-outer .student-change-button-next{
+    right:0 !important;
+}
+
+.student-change-button-prev, .student-change-button-next{
+    transform: translateY(25%);
+}
+
+#recommend-wrap .group-pic{
+    width:80%;
+    margin:0 auto 40px;
+    background-color: rgb(255, 221, 159);
+    box-shadow:3px 3px 8px #ccc;
+    border-radius:10px;
+}
+
+#recommend-wrap .group-pic img{
+    width:100%;
+    vertical-align: middle;
+}
+
+.tab-item{
+   color:#444;
+   font-size: 16px;
+   padding: 3px 15px;
+   margin:0 10px;
+   border:2px solid #fa0;
+   border-radius:60px;
+   box-sizing: border-box;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.message-carousel-outer{
+    
+}
+.message-swiper-container{
+    
+}
+.message-swiper-container .swiper-slide{
+    width:60%;
+    padding-top:20px;
+    box-shadow:3px 3px 5px #ccc;
+    opacity:0.5;
+    transition:.6s;
+}
+
+.message-swiper-container .swiper-slide-active{
+    transform: translateY(-20px);
+    opacity:1;
+}
+
+
+.background{
+    background-color: #fff;
+}
+
+.message-header{
+    color:#fff;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.message-fb .message-header{
+    background-color: rgb(6, 108, 204);  
+}
+
+.message-ig .message-header{
+    background:linear-gradient(90deg,rgb(194, 29, 98),rgb(184, 25, 144)) 
+}
+
+.message-dcard .message-header{
+    background:rgb(82, 181, 206)   
+}
+
+.message-ptt .message-header{
+    background:rgb(0, 0, 0)   
+}
+
+.message-content{
+    display:flex;
+    background-color: #fff;
+    padding: 15px 20px;
+}
+
+.avatar{
+    width:20%;
+    text-align:center;
+    padding-right: 20px;
+   
+}
+
+.avatar img{
+    width:100%;
+    vertical-align: middle;
+}
+
+.message-content .txt{
+    width:80%;  
+    text-align: justify;
+}
+
+.message-content .txt h4{
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.message-content .txt p{
+    color:#444;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+
+.message-content .more{
+   width:100%;
+   position: unset;
+   display:block;
+   text-align:right;
+   padding-right: 10px;
+   margin-top: 10px;
+   
+
+}
+
+.message-content .more a{
+    text-decoration: none;
+    color:#0071bc;
+}
+
+.message-content .more img{
+    display:inline-block;
+}
+
+
+.message-content .tag{
+    margin-top: 15px;
+}
+
+.message-change-button-prev{
+}
+
+
+.swiper-pagination-bullet{
+    width:15px !important;
+    height:15px !important;
+    margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active{
+    background:#fa0 !important;
+}
+
+
+
+
+
+/*------ Form section CSS----------*/
+
+.form-pic{
+    background-color:#BCF6FB;
+    padding-top:3rem;
+}
+
+
+#form-wrap{
+    min-height:800px;
+    background:url('../images/section-bg_02.jpg') center bottom;
+}
+
+#form-wrap .container{
+    padding:50px 15px 100px 15px
+}
+
+
+#form-wrap h2{
+    text-align:center;
+    color:#F7931E;
+    border-bottom:4px dashed #F7931E;
+    background:none;
+    padding-left:0;
+    padding-bottom:20px;
+    margin-bottom:20px;
+}
+
+
+#fixedBTN{
+    width:100%;
+    background-color: #3d4c66;
+    position:fixed;
+    bottom:0;
+    z-index:99;
+    
+}
+
+#fixedBTN .container{
+    max-width:600px;
+    padding:0;
+    display:flex;
+}
+
+#fixedBTN .btn{
+    width:50%;
+    font-size: 20px;
+    letter-spacing: 14px;
+    color:#fff;
+    background-color: transparent;
+    border:0;
+    
+}
+
+#fixedBTN .btn a{
+    display: block;
+    font-weight:lighter;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+
+}
+
+button.btn-buy{
+    
+}
+
+.btn img{
+    margin:0;
+}
+
+button.btn-buy img{
+    order:-1;
+    margin-right: 10px;
+}
+
+button.btn-reserve{
+  
+}
+
+
+/*============================== Ipad Template =================================*/
+@media screen and (max-width:992px){
+
+    .btn-style{
+        width:200px;
+        padding:0;
+        font-size: 20px;
+        color:#fff;   
+        line-height:2;
+        border:0;
+        border-radius:200px;
+        background-color:#ffbb26;
+        box-shadow: 3px 3px 0px #73b0df;
+    }
+    
+    
+    #banner-wrap button{
+        bottom:15px;
+    }
+
+
+
+    .tab-content-section{
+        margin-top: 15em;
+    }
+
+    #miu-don{
+        width:280px;
+        top:-170px
+       
+    }
+
+    
+}
+
+
+
+/*============================== Bigger Mobile Template =================================*/
+@media screen and (max-width:676px){
+
+    #desk-banner{
+        display: none;
+    }
+
+    #mobile-banner{
+        display:block;
+    }
+
+    .advantage-box img:nth-child(1),.advantage-box img:nth-child(2){
+        display:block;
+        float:none;
+        width:100%;
+    }
+
+    .advantage-box img:nth-child(1){
+        margin-bottom: 10px;
+    }
+
+
+    .tab-content-section{
+        margin-top: 10em;
+    }
+
+    .tab-content h3{
+        margin-bottom: 15px;
+    }
+
+    .tab-content-area{
+        flex-direction: column;
+    }
+
+    .tab-content-area .area{
+        margin-bottom: 25px;
+    }
+
+    #miu-don{
+        width:220px;
+        top:-133px;
+    }
+
+    .container{
+        padding:30px 15px;
+    }
+
+    .container h2{
+        font-size: 20px;
+    }
+
+    .btn-style{
+        width:160px;
+        font-size: 18px;
+    }
+
+    .swiper-pagination{
+        margin:0 auto;
+    }
+
+    .swiper-pagination-bullet{
+        width:10px !important;
+        height:10px !important
+    }
+
+    #fixedBTN .btn{
+        font-size: 16px;
+    }
+}
+
+/*============================== Mobile Template =================================*/
+
+@media screen and (max-width:375px){
+
+    .container{
+        padding: 20px 15px;
+    }
+
+    .container>h2{
+        padding-bottom:15px;
+        margin-bottom: 30px;
+        font-size: 18px;    
+    }
+
+    .btn-style{
+        width:130px;
+        padding:0;
+        font-size: 17px;
+        color:#fff;   
+        line-height:2;
+        border:0;
+        border-radius:200px;
+        background-color:#ffbb26;
+        box-shadow: 3px 3px 0px #73b0df;
+    }
+
+    .swiper-pagination-bullet{
+        width:8px !important;
+        height:8px !important;
+    }
+
+    .swiper-pagination{
+        margin: 0 auto;
+    }
+
+    .swiper-button-next{
+        
+    }
+
+    #banner-wrap button{
+        position:absolute;
+        left:0;
+        right:0;
+        margin:auto;
+        bottom:17px;
+    }
+
+
+    #miu-don{
+        width:210px;
+        position:absolute;
+        top:-128px;
+        right:80px;
+        cursor:pointer;
+    }
+
+    .nav-tab li{
+        margin:0 5px;  
+        
+    }
+
+
+    .tab-content-section{  
+        margin-top:9em;
+        margin-bottom: 1rem; 
+    }
+
+    .tab-content .bigger {
+        font-size: 20px;
+    }
+
+
+    .tab-content h3{
+        text-align:center;
+    }
+
+    .tab-content span.q{
+        display:block;
+    }
+
+    .tab-content-area{
+        flex-direction: column;
+    }
+
+    .tab-content-area .area{
+        margin-bottom: 20px;
+    }
+
+
+    .tab-item{
+        font-size: 14px;
+     }
+
+
+     #fixedBTN .btn{
+        font-size: 12px; 
+    }
+
+    .btn-buy{
+        padding-left:10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
